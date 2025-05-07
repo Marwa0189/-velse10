@@ -24,4 +24,4 @@
 <input bind:value={username} type="text" placeholder="Indtast Email" class="input m-2" />
 <input bind:value={password} type="password" placeholder="Indtast Password" class="input m-2" />
 
-<button on:click={login} class="btn btn-primary m-2">Login</button>
+<button onclick={login} class="btn btn-primary m-2">Login</button>
