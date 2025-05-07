@@ -34,20 +34,26 @@
 </script>
 
 <div class="flex min-h-screen flex-col items-center justify-center bg-blue-900 p-4">
-	<h1 class="mb-6 text-3xl font-bold text-white">Log in</h1>
+	<div class="mx-auto w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+		<h1 class="text-4xl font-bold text-center text-blue-900 mb-4">Pausepunktet</h1>
+		<h2 class="text-2xl font-semibold text-center text-blue-700 mb-6">Log ind</h2>
 
-	<div>
-		<Input class="input m-2" bind:value={username} placeholder="Brugernavn" />
-	</div>
-	<div>
-		<Input class="input m-2" bind:value={password} placeholder="Adgangskode" />
-	</div>
-	<div>
-		<Button class="btn btn-primary m-2" onclick={btnclick}>Login</Button>
-	</div>
+		<div class="mb-4">
+			<Input class="input w-full" bind:value={username} placeholder="Brugernavn" />
+		</div>
 
-	<p class="mt-4 text-white">
-		Har du ikke en bruger?
-		<a href="/admin" class="link link-primary ml-2 underline">Opret en her</a>
-	</p>
+		<div class="mb-4">
+			<Input class="input w-full" type="password" bind:value={password} placeholder="Adgangskode" />
+		</div>
+
+		<div class="mb-6 text-center">
+			<Button class="btn btn-primary w-full" onclick={btnclick}>Login</Button>
+		</div>
+
+		<p class="text-center text-blue-800">
+			Har du ikke en bruger?
+			<a href="/admin" class="ml-1 underline text-blue-600 hover:text-blue-800">Opret en her</a>
+		</p>
+	</div>
 </div>
+
