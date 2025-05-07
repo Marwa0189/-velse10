@@ -34,7 +34,7 @@
 	<input type="password" bind:value={password} placeholder="Adgangskode" class="input" />
 </div>
 <div>
-	<button class="btn btn-primary" onclick={createUser}>Opret bruger</button>
+	<button class="btn btn-primary" on:click={createUser}>Opret bruger</button>
 </div>
 
 <!-- Allerede bruger? Gå hjem -->
